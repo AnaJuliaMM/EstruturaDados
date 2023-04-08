@@ -1,6 +1,7 @@
 package one.digitalinnovation;
 
 import one.digitalinnovation.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
         LinkedList<String> myList = new LinkedList<>();
