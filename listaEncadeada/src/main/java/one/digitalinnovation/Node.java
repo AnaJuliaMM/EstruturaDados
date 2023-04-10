@@ -11,7 +11,7 @@ public class Node<T> {
             this.value = value;
             this.nextNodeRef = null;
         }
-        public Node(T value, one.digitalinnovation.Node nextNodeRef){
+        public Node(T value, Node<T> nextNodeRef){
             this.value = value;
             this.nextNodeRef = nextNodeRef;
         }
@@ -24,11 +24,11 @@ public class Node<T> {
             this.value = value;
         }
 
-        public one.digitalinnovation.Node getNextNodeRef() {
+        public Node<T> getNextNodeRef() {
             return nextNodeRef;
         }
 
-        public void setNextNodeRef(one.digitalinnovation.Node nextNodeRef) {
+        public void setNextNodeRef(Node<T> nextNodeRef) {
             this.nextNodeRef = nextNodeRef;
         }
         @Override
