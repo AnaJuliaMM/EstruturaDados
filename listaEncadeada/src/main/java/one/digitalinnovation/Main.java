@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import one.digitalinnovation.linkedlist.LinkedList;
 import one.digitalinnovation.queue.Queue;
+import one.digitalinnovation.stack.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class Main {
 
         switch(option){
             case 1:
-                //getStack();
+                getStack();
                 break;
             case 2:
                 getQueue();
@@ -84,6 +85,36 @@ public class Main {
         System.out.println("\nAdicionado um item a fila:");
         myQueue.enqueue("último");
         System.out.println(myQueue);
+    }
+    private static void getStack(){
+        System.out.println("\n*** Minha Pilha (LIFO):********************************************************************************************");
+        
+        Stack<Integer> myStack = new Stack<>();
+
+        myStack.push(1);
+        myStack.push(2);
+        myStack.push(3);
+        myStack.push(4);
+        myStack.push(5);
+        myStack.push(6);
+        System.out.println(myStack);
+
+        System.out.print("\n- Quem é está no topo? ");
+        System.out.println(myStack.top());
+        System.out.println(myStack);
+
+        System.out.print("\n- Retirando nó: ");
+        System.out.println(myStack.pop()); //Remove the last in
+        System.out.println(myStack);
+
+        System.out.println("\n- Adicionando nó:");
+        myStack.push(100);
+        System.out.println(myStack);
+
+        System.out.print("\n- Retirando nó: ");
+        System.out.println(myStack.pop()); //Remove the last in
+        System.out.println(myStack);
+
     }
 
 }
